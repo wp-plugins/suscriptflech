@@ -60,7 +60,7 @@ entra en el área de administración de Wordress ir a setting > Suscriptores Adm
 
 = 1.0 = 
 
-Actualización de seguridad y preloader en el formulario de suscripción.
+* Actualización de seguridad y preloader en el formulario de suscripción.
 
 
 == Upgrade Notice ==
