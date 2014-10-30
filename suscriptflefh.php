@@ -1,11 +1,11 @@
 <?php 
 /*
-Plugin Name: suscriptflech
-Plugin URI: https://www.webandroid.es
+Plugin Name: Suscriptflech
+Plugin URI: http://www.webandroid.es
 Description: Plugin para la suscripción del sitio web manda por correo el último post insertado a todos Sus usuarios suscritos.
 Version: 0.9
 Author: Félix Luján
-Author URI: https://www.webandroid.es
+Author URI: http://www.webandroid.es
 License: GPL2
 */
 
