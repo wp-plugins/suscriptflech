@@ -3,7 +3,7 @@
 Plugin Name: Suscriptflech
 Plugin URI: http://www.webandroid.es
 Description: Plugin para la suscripción del sitio web manda por correo el último post insertado a todos Sus usuarios suscritos.
-Version: 0.9
+Version: 1.0
 Author: Félix Luján
 Author URI: http://www.webandroid.es
 License: GPL2
@@ -247,8 +247,8 @@ function insert_suscriptflech()
 {
 		 global $wpdb;
 		    
-			$wp_email_suscriptflech = esc_html($_POST['email']);
-			if($wp_email_suscriptflech !="")
+			$wp_email_suscriptflech = esc_html(strip_tags($_POST['email']));
+			if(is_email($wp_email_suscriptflech))
 			{
 			   
 

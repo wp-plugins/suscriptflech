@@ -1,7 +1,7 @@
 === Suscriptflech ===
-Contributors: (webandroid)
+Contributors: webandroid.es
 Donate link: http://www.webandroid.es/
-Tags: suscripción, suscripciones boletín, boletín de suscripción, Newsletters
+Tags: suscripción, suscripciones boletín, boletín de suscripción, Newsletters, email, post, emailing, suscription
 Requires at least: 3.0.1
 Tested up to: 4.0
 Stable tag: 4.3
@@ -58,8 +58,9 @@ entra en el área de administración de Wordress ir a setting > Suscriptores Adm
 * Lanzamiento inicial del plugin
 * Envio de correo cuando añades un nuevo post
 
-= 0.9 = 
-Esta es la primera versión del plugin. No hay actualizaciones disponibles todavía.
+= 1.0 = 
+
+Actualización de seguridad y preloader en el formulario de suscripción.
 
 
 == Upgrade Notice ==
