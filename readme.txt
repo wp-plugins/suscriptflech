@@ -45,7 +45,7 @@ Hay varias opciones para la instalación y configuración de este plugin.
 
 entra en el área de administración de Wordress ir a setting > Suscriptores Admin y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
 
-== Screenshots == 
+== Screenshots ==
 
 1. Una vez instalado el plugin, dirigase a Ajustes > Suscriptores Admin.
 2. Seleccione cambiar imagen logo y inserte una.
