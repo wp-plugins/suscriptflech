@@ -247,7 +247,7 @@ function insert_suscriptflech()
 {
 		 global $wpdb;
 		    
-			$wp_email_suscriptflech = esc_html($_POST['email']);
+			$wp_email_suscriptflech = esc_html(strip_tags($_POST['email']));
 			if($wp_email_suscriptflech !="")
 			{
 			   
