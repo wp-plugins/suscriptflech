@@ -58,8 +58,9 @@ entra en el área de administración de Wordress ir a setting > Suscriptores Adm
 * Lanzamiento inicial del plugin
 * Envio de correo cuando añades un nuevo post
 
-= 0.9 = 
-Esta es la primera versión del plugin. No hay actualizaciones disponibles todavía.
+= 1.0 = 
+
+Actualización de seguridad y preloader en el formulario de suscripción.
 
 
 == Upgrade Notice ==
