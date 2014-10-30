@@ -1,7 +1,7 @@
 === Suscriptflech ===
-Contributors: (webandroid)
+Contributors: webandroid.es
 Donate link: http://www.webandroid.es/
-Tags: suscripción, suscripciones boletín, boletín de suscripción, Newsletters
+Tags: suscripción, suscripciones boletín, boletín de suscripción, Newsletters, email, post, emailing, suscription
 Requires at least: 3.0.1
 Tested up to: 4.0
 Stable tag: 4.3
