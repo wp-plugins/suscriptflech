@@ -31,7 +31,7 @@ Hay varias opciones para la instalación y configuración de este plugin.
 
 = Configura el Plugin =
 
-1. entra en el área de administración de Wordress ir a setting > Suscriptores Admin y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
+1. entra en el área de administración de Wordress ir suscripcion y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
 
 
 = Como usar el widget =
