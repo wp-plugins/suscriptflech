@@ -161,7 +161,7 @@ class Suscriptflech_Widget extends WP_Widget
 
 	function  widget($args, $instance)
 	{
-		extract($args, EXTR_SKIP);
+		extract($args);
 		$title = apply_filters('widget_title', $instance['title']);
 
 		echo $before_widget;
