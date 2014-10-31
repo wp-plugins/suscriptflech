@@ -51,13 +51,17 @@ add_action('admin_head', 'Estilos_backend_Suscriptflech');
 
 add_action('publish_post', 'email_usuarios');
 
-add_action('wp_ajax_suscribete', 'insert_suscriptflech');
-
-add_action('wp_head', 'mostrar_function_ajax_sucriptflech');
-
 add_filter('wp_mail_from', 'email_nuevo');
 
 add_filter('wp_mail_from_name', 'nombre_nuevo');
+
+add_action('wp_head', 'mostrar_function_ajax_sucriptflech');
+
+wp_enqueue_script("ajax-script", path_join(WP_PLUGIN_URL, basename(dirname(__FILE__))."/js/codigo.js"), array('jquery'));
+
+add_action('wp_ajax_suscribete', 'insert_suscriptflech');
+
+add_action( 'wp_ajax_nopriv_suscribete', 'insert_suscriptflech' );
 
 if (isset($_GET['page']) && $_GET['page'] == 'suscriptores') {
 
@@ -65,9 +69,6 @@ if (isset($_GET['page']) && $_GET['page'] == 'suscriptores') {
 	add_action('admin_print_styles', 'my_admin_styles');
 }
 
-wp_register_script('codigo', plugins_url('/js/codigo.js', __FILE__), array('jquery'));
-wp_enqueue_script('jquery');
-wp_enqueue_script('codigo');
 
 $url_plugin = WP_PLUGIN_URL . '/suscriptflech';
 
@@ -158,6 +159,26 @@ class Suscriptflech_Widget extends WP_Widget
 		$this->WP_Widget('fx_id', 'Formulario de Suscripcion', $widger_options);
 	}
 
+	function  widget($args, $instance)
+	{
+		extract($args, EXTR_SKIP);
+		$title = apply_filters('widget_title', $instance['title']);
+
+		echo $before_widget;
+		echo $before_title.$title.$after_title;
+
+
+		require('templates/temawidget.php');
+		
+		echo $after_widget;
+	}
+	function update($new_instance, $old_instance)
+	{
+		$instance = $old_instance;
+		$instance['title'] = strip_tags($new_instance['title']);
+
+		return $instance;
+	}
 	function form($instance)
 	{
 		$defaults = array('title' => 'Formulario de suscripción');
@@ -167,25 +188,6 @@ class Suscriptflech_Widget extends WP_Widget
 		echo '<p>Title <input class="widefat" name="'.$this->get_field_name('title').'" type="text" value="'.$title.'"</p>';
 	}
 
-	function update($new_instance, $old_instance)
-	{
-		$instance = $old_instance;
-		$instance['title'] = strip_tags($new_instance['title']);
-
-		return $instance;
-	}
-	function  widget($args, $instance)
-	{
-		extract($args);
-		$title = apply_filters('widget_title', $instance['title']);
-
-		echo $before_widget;
-		echo $before_title.$title.$after_title;
-
-
-		require('templates/temawidget.php');
-		echo $after_widget;
-	}
 }
 
 function email_nuevo($old) {
@@ -248,7 +250,8 @@ function insert_suscriptflech()
 {
 		 global $wpdb;
 		    
-			$wp_email_suscriptflech = esc_html(strip_tags($_POST['email']));
+		
+			$wp_email_suscriptflech = $_POST['email'];
 			if(is_email($wp_email_suscriptflech))
 			{
 			   
@@ -260,14 +263,15 @@ function insert_suscriptflech()
 
 						{
 							    $wpdb->query( $wpdb->prepare("INSERT INTO ".$tablename." (email) VALUES (%s)", $wp_email_suscriptflech));
-								echo '0';
+								die('0');
 					        }else{
-							 	echo '1';	
+							 	die('1');	
 						}
 	        }else {
 
-	        	echo '2';
+	        	die('2');
 	        }
+	   
 }
 function mostrar_function_ajax_sucriptflech()
 {
