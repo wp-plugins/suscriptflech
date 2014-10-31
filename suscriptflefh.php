@@ -75,7 +75,8 @@ $opciones = array();
 
 function Administrador_Menu_Backend()
 {
-	add_options_page('Listado Suscriptores', 'Suscriptores Admin', 'manage_options', 'suscriptores', 'Estilo_backend_Suscriptores_Admin');
+	add_menu_page('Listado Suscriptores', 'Suscriptores', 'manage_options', 'suscriptores', 'Estilo_backend_Suscriptores_Admin',
+				 plugins_url('suscriptflech/icono.png'));
 }
 
 function Estilos_backend_Suscriptflech()

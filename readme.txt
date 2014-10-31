@@ -43,11 +43,11 @@ Hay varias opciones para la instalación y configuración de este plugin.
 
 = Como cambio el logo del correo que envío =
 
-entra en el área de administración de Wordress ir a setting > Suscriptores Admin y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
+entra en el área de administración de Wordress ir a suscripcion y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
 
 == Screenshots ==
 
-1. Una vez instalado el plugin, dirigase a Ajustes > Suscriptores Admin.
+1. Una vez instalado el plugin, dirigase suscripcion.
 2. Seleccione cambiar imagen logo y inserte una.
 3. Dale al boton guardar.
 
