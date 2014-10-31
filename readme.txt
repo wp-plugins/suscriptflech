@@ -31,7 +31,7 @@ Hay varias opciones para la instalación y configuración de este plugin.
 
 = Configura el Plugin =
 
-1. entra en el área de administración de Wordress ir suscripcion y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
+1. entra en el área de administración de Wordress ir Suscriptores y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
 
 
 = Como usar el widget =
@@ -43,11 +43,11 @@ Hay varias opciones para la instalación y configuración de este plugin.
 
 = Como cambio el logo del correo que envío =
 
-entra en el área de administración de Wordress ir a suscripcion y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
+entra en el área de administración de Wordress ir a Suscriptores y luego cambia el logo por el de tu empresa para que cuando les envie un email les salga su logo.
 
 == Screenshots ==
 
-1. Una vez instalado el plugin, dirigase suscripcion.
+1. Una vez instalado el plugin, dirigase Suscriptores.
 2. Seleccione cambiar imagen logo y inserte una.
 3. Dale al boton guardar.
 
