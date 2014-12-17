@@ -12,7 +12,7 @@ Plugin para la suscripción del sitio web, manda por correo el último post inse
 
 == Description ==
 
-Este plugin permite que se suscriban por email por medio de un widget y cuando nosotros isertamos un nuevo post, ese lo manda por correo a todos los usuarios que se han suscrito, además tenemos el control de los emails y los podemos añadir o borrar. 
+Este plugin permite que se suscriban por email por medio de un widget y cuando nosotros insertamos un nuevo post, ese lo manda por correo a todos los usuarios que se han suscrito, además tenemos el control de los emails y los podemos añadir o borrar. 
 
 == Installation ==
 
