@@ -37,6 +37,12 @@
 	padding-bottom: 5px;
 	padding-left: 25px;
 }
+.exito{
+   color: #130;
+    background-color: #dfc;
+    padding: 1em!important;
+    width: 100% !important;
+}
 .boton_suscriptflech {
 	 background-color: #428bca;
     border-color: #357ebd;
@@ -73,6 +79,7 @@
 }
 .fx_input{
     position: relative;
+    display: block;
 }
 .fx_input input{
     padding-right: 2em;
