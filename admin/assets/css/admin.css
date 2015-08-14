@@ -1,0 +1,44 @@
+/* This stylesheet is used to style the admin option form of the plugin. */
+.activado,
+.desactivado {
+ 	color: #fff;
+  	padding: 5px 20px;
+  	border-radius: 7px;
+  	margin-top: 4px;
+  	display: inline-block;
+  	line-height: 2.5em;
+}
+.activado {
+  	background-color: #337ab7;
+}
+.desactivado {
+  	background-color: #f0ad4e;
+}
+.post-edit-link {
+	background-color: #5cb85c;
+	color: #fff;
+	padding: 2px 10px;
+  	border-radius: 7px;
+  	margin-top: 2px;
+  	display: inline-block;
+  	line-height: 2.5em;
+}
+.post-edit-link:hover {
+	color: #fff;
+	background-color: #82D782;
+}
+.borrar {
+	background-color: #d9534f;
+	color: #fff;
+	padding: 2px 10px;
+  	border-radius: 7px;
+  	margin-top: 2px;
+  	display: inline-block;
+  	line-height: 2.5em;
+        margin-left: 0.5em;
+}
+.borrar:hover {
+	background-color: #F0726F;
+	color: #fff;
+}
+#settingsgeneral_plantilla_logo_email_button{vertical-align: 0 !important;}
