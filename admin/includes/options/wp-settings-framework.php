@@ -241,7 +241,7 @@ if( !class_exists('WordPressSettingsFramework') ){
 			 if(empty($logo)) :?>
                             <img width="50" height="50" src="<?php echo plugins_url( 'suscriptflech/admin/assets/images/logo.jpg' ) ?>">
 			<?php else:?>  
-                        <img src="<?php echo $logo; ?>" width="50" height="50"> Logo
+                        <img src="<?php echo $logo; ?>" width="50" height="50">
                         <?php endif;   
                         
                     $val = esc_attr($val);
