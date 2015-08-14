@@ -71,7 +71,7 @@ switch ($plantilla)
 			 if(empty($logo)) :?>
         <img src="<?php echo plugins_url( 'suscriptflech/admin/assets/images/logo.jpg' ) ?>" width="80" height="80">
         <?php else:?>  
-            <img src="<?php echo $logo; ?>" width="80" height="80"> Logo
+            <img src="<?php echo $logo; ?>" width="80" height="80">
         <?php endif;  ?>
     </span> <span class="azul" style="color: <?php echo $color_texto_enlace;?>;text-transform: uppercase;float: right;font-weight: bold;background-color: #e5e6e9;padding: 0.5em 1em;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;margin: 2em 1em 1em 1em;"><?php echo get_bloginfo('name');?></span>   
 <div class="flot" style="clear: both;"></div>
