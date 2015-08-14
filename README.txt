@@ -1,7 +1,7 @@
 === SUSCRIPTFLECH ===
 Contributors: webandroid.es
 Donate link: http://www.webandroid.es
-Tags: comments, spam
+Tags: suscripción, suscripciones boletín, boletín de suscripción, Newsletters, email, post, emailing, suscription
 Requires at least: 3.0.1
 Tested up to: 4.2.4
 Stable tag: 4.2.4
