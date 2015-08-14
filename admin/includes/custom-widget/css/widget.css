@@ -37,7 +37,7 @@
 	padding-bottom: 5px;
 	padding-left: 25px;
 }
-.boton {
+.boton_suscriptflech {
 	 background-color: #428bca;
     border-color: #357ebd;
     color: #fff;
@@ -58,7 +58,7 @@
     white-space: nowrap;
     width: 100%;
 }
-.boton:hover {
+.boton_suscriptflech:hover {
    color: #fff; 
    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));

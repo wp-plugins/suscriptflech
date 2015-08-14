@@ -12,11 +12,12 @@ echo $before_title . $title . $after_title;
         <p class="form_fx">
             <span class="fx_input">
                 <input name="wp_email_sucriptflech" id="wp_email_sucriptflech" type="email"  class="regular-text form-control" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="E-mail" autocomplete="off">
+                 <img id="carga" style="display:none" src="<?php echo plugins_url('suscriptflech/public/assets/images/cargando.png'); ?>">
                 <input type="hidden" name="ajax_fx_suscriptflech" value="<?php echo wp_create_nonce('ajax_suscriptflech_options_nonce'); ?>">
-                <img id="carga" style="display:none" src="<?php echo plugins_url('suscriptflech/public/assets/images/cargando.png'); ?>">
+               
             </span> 
             <span id="humano"><input type="checkbox" id="checkbox" name="checkbox"> Sí, soy humano*</span> 
-            <input class="boton" name="botonsuscripcion" type="submit" value="Enviar" onclick="suscripcion(wp_email_sucriptflech.value,ajax_fx_suscriptflech.value);" /> </p>
+            <input class="boton_suscriptflech" name="botonsuscripcion" type="submit" value="Enviar" onclick="suscripcion(wp_email_sucriptflech.value,ajax_fx_suscriptflech.value);" /> </p>
     </div>
     <div class="exito1" id="exito1">
         
