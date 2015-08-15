@@ -6,7 +6,7 @@
  * Plugin URI:        http://www.webandroid.es
  * Description:       Plugin para la suscripción del sitio web, manda emails a los suscriptores cuando se inserta una entrada del blog.
  * Version:           2.1
- * Author:            Félix Luján
+ * Author:            Felix Luján
  * Author URI:        http://www.webandroid.es
  * Text Domain:       plugin-suscriptflech
  * License:           GPL-2.0+
