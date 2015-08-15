@@ -1,4 +1,4 @@
-=== SUSCRIPTFLECH ===
+=== Suscriptflech ===
 Contributors: webandroid.es
 Donate link: http://www.webandroid.es
 Tags: suscripción, suscripciones boletín, boletín de suscripción, Newsletters, email, post, emailing, suscription
@@ -8,7 +8,7 @@ Stable tag: 4.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Suscripción del sitio web
+Suscripción del sitio web, para mandar emails cuando insertamos un nuevo post. 
 
 == Description ==
 
