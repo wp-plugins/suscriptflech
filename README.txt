@@ -43,13 +43,13 @@ Hay varias opciones para la instalación y configuración de este plugin.
 
 = Como cambio el logo del correo que envío =
 
-entra en el área de administración de Wordress ir a Suscriptores y luego cambia el logo por el de tú empresa para que cuando les envie un email les salga tú logo.
+entra en el área de administración de Wordress ir a Suscriptflech y luego cambia el logo por el de tú empresa para que cuando les envie un email les salga tú logo.
 
 == Screenshots ==
 
-1. /assets/screenshot-1.png 
-2. /assets/screenshot-2.png
-3. /assets/screenshot-3.png
+1. Pantalla para la configuración del plugin 
+2. Pantalla donde se guarda todos los emails que  se han suscritos, se pueden activar, desactivar y borrar  
+3. Configuración de la página de estado de la suscripción, no cambies el título de la página solo el contenido teniendo cuidado de no eliminar la clase que viene por defecto.  
 
 == Changelog ==
 
