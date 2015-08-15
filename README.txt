@@ -66,8 +66,6 @@ entra en el área de administración de Wordress ir a Suscriptores y luego cambi
 
 * Cambio total del plugin seguridad y diseño.
 
-== Arbitrary section ==
+= 2.1 =
 
-== Updates ==
-
-Sin actualización de momento
+* Sección para configurar el aspecto del botón y del input de widget.
