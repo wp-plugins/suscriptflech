@@ -10,6 +10,13 @@ $wpsf_settings[] = array(
     'section_order' => 5,
     'fields' => array(
         array(
+            'id' => 'tamano_boton',
+            'title' => 'Tamaño del boton del widget',
+            'desc' => 'Pon el tamaño del boton del widget en %.',
+            'type' => 'text',
+            'std' => '100%'
+        ),
+        array(
             'id' => 'color_boton',
             'title' => 'Color del botón del widget',
             'desc' => 'Pon el color del botón del widget.',
@@ -29,6 +36,13 @@ $wpsf_settings[] = array(
             'desc' => 'Pon el radio del borde del botón en px.',
             'type' => 'text',
             'std' => '4px'
+        ),
+        array(
+            'id' => 'tamano_input',
+            'title' => 'Tamaño del input del widget',
+            'desc' => 'Pon el tamaño del input del widget en %.',
+            'type' => 'text',
+            'std' => '100%'
         ),
         array(
             'id' => 'border_input',

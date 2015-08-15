@@ -15,11 +15,13 @@ echo $before_title . $title . $after_title;
                 $border_input = get_options_page('border_input');
                 $color_fondo = get_options_page('color_fondo');
                 $color_texto_input = get_options_page('color_input_texto');
+                $tamano_input = get_options_page('tamano_input');
                 if($color_fondo == '#'){$color_fondo = '';};
                 if($color_texto_input == '#'){$color_texto_input = '';};
+                if(empty($tamano_input)){$tamano_input = '100%';};
                 
                 ?>
-                <input <?php if(!empty($border_input) or (!empty($color_fondo)) or (!empty($color_texto_input))):?>style="<?php if(!empty($color_texto_input)):?>color:<?php echo $color_texto_input; ?>;<?php endif;?><?php if(!empty($color_fondo)):?>background-color: <?php echo $color_fondo; ?>;<?php endif;?>-<?php if(!empty($border_input)):?>webkit-border-radius: <?php echo $border_input;?>;-moz-border-radius: <?php echo $border_input;?>;border-radius: <?php echo $border_input;?>;<?php endif;?>"<?php endif;?> name="wp_email_sucriptflech" id="wp_email_sucriptflech" type="email"  class="regular-text form-control" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="E-mail" autocomplete="off">
+                <input style="<?php if(!empty($color_texto_input)):?>color:<?php echo $color_texto_input; ?>;<?php endif;?><?php if(!empty($color_fondo)):?>background-color: <?php echo $color_fondo; ?>;<?php endif;?><?php if(!empty($border_input)):?>webkit-border-radius: <?php echo $border_input;?>;-moz-border-radius: <?php echo $border_input;?>;border-radius: <?php echo $border_input;?>;<?php endif;?>width:<?php echo $tamano_input;?>" name="wp_email_sucriptflech" id="wp_email_sucriptflech" type="email"  class="regular-text form-control" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="E-mail" autocomplete="off">
                  <img id="carga" style="display:none" src="<?php echo plugins_url('suscriptflech/public/assets/images/cargando.png'); ?>">
                 <input type="hidden" name="ajax_fx_suscriptflech" value="<?php echo wp_create_nonce('ajax_suscriptflech_options_nonce'); ?>">
                
@@ -30,12 +32,14 @@ echo $before_title . $title . $after_title;
                 $color_boton = get_options_page('color_boton');
                 $border_boton = get_options_page('border_boton');
                 $color_texto = get_options_page('color_texto');
+                $tamano_boton = get_options_page('tamano_boton');
                 if(empty($border_boton)){$border_boton = '4px';}
                 if($color_boton == '#'){$color_boton = '#428bca';}
                 if($color_texto == '#'){$color_texto = '#ffffff';}
+                if(empty($tamano_boton)){$tamano_boton = '100%';};
             ?>
             
-            <input class="boton_suscriptflech" style="background-color: <?php echo $color_boton; ?>;color: <?php echo $color_texto;?>;-webkit-border-radius: <?php echo $border_boton;?>;-moz-border-radius: <?php echo $border_boton;?>;border-radius: <?php echo $border_boton;?>;" name="botonsuscripcion" type="submit" value="Enviar" onclick="suscripcion(wp_email_sucriptflech.value,ajax_fx_suscriptflech.value);" /> </p>  
+            <input class="boton_suscriptflech" style="width:<?php echo $tamano_boton;?>;background-color: <?php echo $color_boton; ?>;color: <?php echo $color_texto;?>;-webkit-border-radius: <?php echo $border_boton;?>;-moz-border-radius: <?php echo $border_boton;?>;border-radius: <?php echo $border_boton;?>;" name="botonsuscripcion" type="submit" value="Enviar" onclick="suscripcion(wp_email_sucriptflech.value,ajax_fx_suscriptflech.value);" /> </p>  
     </div>
     <div class="exito1" id="exito1">
         
