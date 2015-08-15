@@ -6,10 +6,52 @@ global $wpsf_settings;
 $wpsf_settings[] = array(
     'section_id' => 'general',
     'section_title' => '',
-    'section_description' => '<br><br><span class="dashicons dashicons-admin-generic"></span> Configuración de los mensajes a mostrar',
+    'section_description' => '<br><br><span class="dashicons dashicons-admin-generic"></span> Configuración de los mensajes a mostrar y configuración widget',
     'section_order' => 5,
     'fields' => array(
-    	 array(
+        array(
+            'id' => 'color_boton',
+            'title' => 'Color del botón del widget',
+            'desc' => 'Pon el color del botón del widget.',
+            'type' => 'color',
+            'std' => '#428bca'
+        ),
+        array(
+            'id' => 'color_texto',
+            'title' => 'Color del texto del widget',
+            'desc' => 'Pon el color del texto del widget.',
+            'type' => 'color',
+            'std' => '#ffffff'
+        ),
+        array(
+            'id' => 'border_boton',
+            'title' => 'Borde del botón del widget',
+            'desc' => 'Pon el radio del borde del botón en px.',
+            'type' => 'text',
+            'std' => '4px'
+        ),
+        array(
+            'id' => 'border_input',
+            'title' => 'Borde del campo  del widget',
+            'desc' => 'Pon el radio del borde del campo input en px.',
+            'type' => 'text',
+            'std' => ''
+        ),
+        array(
+            'id' => 'color_fondo',
+            'title' => 'Color fondo input del widget',
+            'desc' => 'Pon el color del fondo del input.',
+            'type' => 'color',
+            'std' => ''
+        ),
+         array(
+            'id' => 'color_input_texto',
+            'title' => 'Color texto del input del widget',
+            'desc' => 'Pon el color del texto al escribir en el input.',
+            'type' => 'color',
+            'std' => ''
+        ),
+    	array(
             'id' => 'fallo_email',
             'title' => 'Email no válido',
             'desc' => 'Escriba el texto que aparecerá cuando no sea un email valido.',
