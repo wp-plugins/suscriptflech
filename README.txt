@@ -69,3 +69,7 @@ entra en el área de administración de Wordress ir a Suscriptores y luego cambi
 = 2.1 =
 
 * Sección para configurar el aspecto del botón y del input de widget.
+
+== Updates ==
+
+Sin actualización de momento
