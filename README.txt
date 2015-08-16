@@ -70,6 +70,10 @@ entra en el área de administración de Wordress ir a Suscriptflech y luego camb
 
 * Sección para configurar el aspecto del botón y del input de widget.
 
+= 2.1.0 =
+
+* Actualización para la creación de una sección nueva en el apartado de suscriptflech, que se podrán importar los emails que tenías antes en la versión 1.0 y que ya no te salen a partir de la versión 2.0
+
 == Updates ==
 
 Sin actualización de momento

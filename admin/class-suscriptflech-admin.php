@@ -50,7 +50,7 @@ class Suscriptflech_Admin {
 
 		// Load admin style sheet and JavaScript.
 		//add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ) );
-		//add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
 
 		// Add the options page and menu item.
 		//add_action( 'admin_menu', array( $this, 'add_plugin_admin_menu' ) );
@@ -67,11 +67,9 @@ class Suscriptflech_Admin {
 		 */
 		add_action( 'Suscriptflech', array( $this, 'action_method_name' ) );
 		add_filter( 'Suscriptflech', array( $this, 'filter_method_name' ) );
-
-                add_action('publish_post', array($this, 'mandar_email_usuario_suscritos'));
                 add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ) );
-
-		
+                add_action('publish_post', array($this, 'mandar_email_usuario_suscritos'));
+                
 
 	}
         public function mandar_email_usuario_suscritos($post_id)
@@ -175,14 +173,14 @@ class Suscriptflech_Admin {
 	 */
 	public function enqueue_admin_scripts() {
 
-		if ( ! isset( $this->plugin_screen_hook_suffix ) ) {
+		/*if ( ! isset( $this->plugin_screen_hook_suffix ) ) {
 			return;
 		}
 
-		$screen = get_current_screen();
-		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
+		$screen = get_current_screen();*/
+		/*if ( $this->plugin_screen_hook_suffix == $screen->id ) {*/
 			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Suscriptflech::VERSION );
-		}
+		/*}*/
 
 	}
 

@@ -31,8 +31,28 @@ class WPSFTest {
     {
         $page_hook = add_menu_page( __( 'Suscriptflech', $this->l10n ), __( 'Suscriptflech', $this->l10n ), 'update_core', 'Suscriptflech', array(&$this, 'settings_page') );
         add_submenu_page( 'Suscriptflech', __( 'Settings', $this->l10n ), __( 'Settings', $this->l10n ), 'update_core', 'Suscriptflech', array(&$this, 'settings_page') );
+        add_submenu_page( 'Suscriptflech', __( 'Importar emails antiguos', $this->l10n ), __( 'Importar emails antiguos', $this->l10n ), 'update_core', 'mostrar-emails', array(&$this, 'mostrar_emails') );
     }
-    
+    function mostrar_emails()
+    {
+         ?>
+		<div class="wrap">
+			<div id="icon-options-general" class="icon32"></div>
+			<h2>Recuperar los emails de la otra versión</h2>
+                        <p>Aquí puedes recuperar los emails que tenías en la otra versión dale en el botón de importar y se pasaran a la sección de suscriptores</p>
+                                    
+			<?php 
+
+			// Output your settings form
+			$this->wpsf->lista_emails_anteriores();     
+			?>
+                        
+                        
+                        
+                        
+		</div>
+		<?php
+    }
     function settings_page()
 	{
 	    // Your settings page

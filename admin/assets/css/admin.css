@@ -42,3 +42,5 @@
 	color: #fff;
 }
 #settingsgeneral_plantilla_logo_email_button{vertical-align: 0 !important;}
+#correcto_fx_importar{display: none;}
+#cargadoando{margin: 1em 0 0 1em;display: block;}
