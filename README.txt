@@ -49,7 +49,8 @@ entra en el área de administración de Wordress ir a Suscriptflech y luego camb
 
 1. Pantalla para la configuración del plugin 
 2. Pantalla donde se guarda todos los emails que  se han suscritos, se pueden activar, desactivar y borrar  
-3. Configuración de la página de estado de la suscripción, no cambies el título de la página solo el contenido teniendo cuidado de no eliminar la clase que viene por defecto.  
+3. Configuración de la página de estado de la suscripción, no cambies el título de la página solo el contenido teniendo cuidado de no eliminar la clase que viene por defecto.
+4. Actualización para la creación de una sección nueva en el apartado de suscriptflech, que se podrán importar los emails que tenías antes en la versión 1.0 y que ya no te salen a partir de la versión 2.0.  
 
 == Changelog ==
 
