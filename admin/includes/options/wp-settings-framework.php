@@ -410,7 +410,7 @@ if (!class_exists('WordPressSettingsFramework')) {
                 <button class="button-primary" style="margin: 2em 1em 1em 1em;" onclick="importarTabla('fximporta');">Importar emails</button>  
                 </div>
            
-                 <div id="correcto_fx_importar" class="inside">
+                            <div id="correcto_fx_importar" style="display: none;" class="inside">
                      <p>Se han importado todos los correos correctamente, ahora saldrán reflejados en la sección de suscriptores</p>
                 </div>                           
                 </div>
