@@ -34,8 +34,8 @@ echo $before_title . $title . $after_title;
                 $color_texto = get_options_page('color_texto');
                 $tamano_boton = get_options_page('tamano_boton');
                 if(empty($border_boton)){$border_boton = '4px';}
-                if($color_boton == '#'){$color_boton = '#428bca';}
-                if($color_texto == '#'){$color_texto = '#ffffff';}
+                if($color_boton == '#' or empty($color_boton)){$color_boton = '#428bca';}
+                if($color_texto == '#' or empty($color_texto)){$color_texto = '#ffffff';}
                 if(empty($tamano_boton)){$tamano_boton = '100%';};
             ?>
             
